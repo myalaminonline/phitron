@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    
+    char a[101],b[101];
+    scanf("%s %s",a,b);
+    printf("%s %s\n",a,b);
+
+    // int length_a = strlen(a);
+    // int length_b = strlen(b);
+
+    // for(int i=0;i<=length_b;i++){
+    //     a[length_a+i] = b[i];
+    // }
+    // printf("%s\n",a);
+
+    strcat(a,b);
+    printf("%s %s\n",a,b);
+
+    return 0;
+}
