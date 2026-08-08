@@ -2,62 +2,54 @@
 using namespace std;
 
 class Node{
-
     public:
         int val;
         Node* next;
         Node* prev;
-
-        Node(int val){
-            this->val = val;
-            this->next = NULL;
-            this->prev = NULL;
-        }
+    Node(int val){
+        this->val = val;
+        this->next = NULL;
+        this->prev = NULL;
+    }
 };
 
 class Stack{
-
     public:
         Node* head = NULL;
         Node* tail = NULL;
         int count = 0;
-
-        void push(int val){
-            count++;
-            Node* new_node = new Node(val);
-            if(head == NULL){
-                head = new_node;
-                tail = new_node;
-                return;
-            }
-            tail->next = new_node;
-            new_node->prev = tail;
+    void push(int val){
+        count++;
+        Node* new_node = new Node(val);
+        if(head == NULL){
+            head = new_node;
             tail = new_node;
+            return;
         }
-
-        void pop(){
-            count--;
-            Node* delete_node = tail;
-            tail = tail->prev;
-            delete delete_node;
-            if(tail == NULL){
-                head = NULL;
-                return;
-            }
-            tail->next = NULL;
+        tail->next = new_node;
+        new_node->prev = tail;
+        tail = new_node;
+    }
+    void pop(){
+        count--;
+        Node* delete_node = tail;
+        tail = tail->prev;
+        delete delete_node;
+        if(tail == NULL){
+            head = NULL;
+            return;
         }
-
-        int top(){
-            return tail->val;
-        }
-
-        int size(){
-            return count;
-        }
-
-        bool empty(){
-            return head == NULL;
-        }
+        tail->next = NULL;
+    }
+    int top(){
+        return tail->val;
+    }
+    int size(){
+        return count;
+    }
+    bool empty(){
+        return head == NULL;
+    }
 };
 
 int main(){

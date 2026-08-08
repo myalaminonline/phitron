@@ -1,0 +1,20 @@
+// https://www.codingninjas.com/studio/problems/insert-an-element-at-its-bottom-in-a-given-stack_1171166
+// https://www.naukri.com/code360/problems/insert-an-element-at-its-bottom-in-a-given-stack_1171166?leftPanelTabValue=SUBMISSION
+
+/*
+#include <bits/stdc++.h> 
+stack<int> pushAtBottom(stack<int>& myStack, int x) 
+{
+    stack<int> newStack;
+    while(!myStack.empty()){
+        newStack.push(myStack.top());
+        myStack.pop();
+    }
+    myStack.push(x);
+    while(!newStack.empty()){
+        myStack.push(newStack.top());
+        newStack.pop();
+    }
+    return myStack;
+}
+*/

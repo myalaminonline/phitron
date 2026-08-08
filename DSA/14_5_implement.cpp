@@ -41,10 +41,18 @@ class Queue{
         }
         head->prev = NULL;
     }
-    int front(){return head->val;}
-    int back(){return tail->val;}
-    int size(){return count;}
-    bool empty(){return head == NULL;}
+    int front(){
+        return head->val;
+    }
+    int back(){
+        return tail->val;
+    }
+    int size(){
+        return count;
+    }
+    bool empty(){
+        return head == NULL;
+    }
 };
 
 int main()
