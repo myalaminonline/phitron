@@ -1,12 +1,3 @@
-phitron
-google
-facebook
-Not Available
-Not Available
-google
-twitter
-Not Available
-Not Available
-youtube
-Not Available
-phitron
+10 20 40 30 50 60 
+40 20 10 50 30 60 
+40 20 50 60 30 10 
