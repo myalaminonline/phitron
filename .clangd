@@ -1,0 +1,14 @@
+CompileFlags:
+  Compiler: C:/MinGW/bin/g++.exe
+  Add:
+    - --target=x86_64-w64-windows-gnu
+    - -isystem
+    - C:/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++
+    - -isystem
+    - C:/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32
+    - -isystem
+    - C:/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward
+    - -isystem
+    - C:/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed
+    - -isystem
+    - C:/MinGW/x86_64-w64-mingw32/include
